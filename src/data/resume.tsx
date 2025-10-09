@@ -125,6 +125,7 @@ export const DATA = {
   projects: [
     {
       title: "GATEPREP",
+      projectType: "Web Application",
       href: "#",
       dates: "2024",
       active: true,
@@ -155,6 +156,7 @@ export const DATA = {
     },
     {
       title: "DSARapid",
+      projectType: "Mobile Application",
       href: "#",
       dates: "2024",
       active: true,
@@ -182,6 +184,7 @@ export const DATA = {
     },
     {
       title: "Book Store Management",
+      projectType: "Desktop Application",
       href: "#",
       dates: "2023",
       active: true,
