@@ -29,8 +29,10 @@ export const DATA = {
     "Flutter",
     "Git",
     "GitHub",
+    "Postman",
     "MySQL",
     "MongoDB",
+    "PostgreSQL",
     "Firebase",
   ],
   navbar: [
@@ -55,13 +57,13 @@ export const DATA = {
 
         navbar: true,
       },
-      // X: {
-      //   name: "X",
-      //   url: "https://twitter.com/namrata0607",
-      //   icon: Icons.x,
+      LeetCode: {
+        name: "LeetCode",
+        url: "https://leetcode.com/u/NamrataDaphale/",
+        icon: Icons.LeetCode,
 
-      //   navbar: true,
-      // },
+        navbar: true,
+      },
       // Youtube: {
       //   name: "Youtube",
       //   url: "#",
