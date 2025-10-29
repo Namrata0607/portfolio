@@ -75,6 +75,19 @@
     }
   }
 
+  /* Prevent layout shift when modal opens */
+  html {
+    overflow-y: scroll;
+  }
+  
+  body[data-scroll-locked] {
+    padding-right: 0 !important;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+
   h3 code {
     @apply !text-lg md:!text-xl;
   }

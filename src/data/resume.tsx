@@ -91,7 +91,7 @@ export const DATA = {
       start: "June 2025",
       end: "Present",
       description:
-        "Developing a real-time EdTech solution with real-time polls, quizzes, live Q&A, and anonymous doubt-asking to boost student participation. Adding gamified features like rewards, mini-games, puzzles, and visuals to make learning engaging and inclusive.",
+        "During this internship, we conducted surveys to identify student learning gaps, analyzed feedback to select the most voted topic, and studied overall needs to design a solution accordingly. Building a real-time EdTech platform with live polls, quizzes, and anonymous Q&A to enhance interactive learning.",
     },
     {
       company: "INet Solutions",
@@ -103,13 +103,13 @@ export const DATA = {
       start: "January 2023",
       end: "February 2023",
       description:
-        "Developed a Flutter and Dart mobile app for online Kathak classes, enabling teachers to add students for multiple exams. Integrated features for sharing exam-specific dance videos and syllabus, accessible to students.",
+        "During this internship, we Learned Flutter workflow, state management and designed responsive UI components for better accessibility. Developed a Flutter and Dart mobile app for online Kathak classes, enabling teachers to manage students across multiple exams on a single platform.",
     },
   ],
   education: [
     {
       school: "D.Y.Patil College of Engineering & Technology, Kolhapur",
-      href: "https://www.dypcet.edu.in",
+      href: "https://coek.dypgroup.edu.in/",
       degree: "B.Tech in Computer Science & Engineering",
       logoUrl: "/dyp.png",
       start: "August 2023",
@@ -117,7 +117,7 @@ export const DATA = {
     },
     {
       school: "Government Polytechnic, Kolhapur",
-      href: "#",
+      href: "https://www.gpkolhapur.ac.in/",
       degree: "Diploma in Information Technology",
       logoUrl: "/gpk.jpg",
       start: "August 2020",
@@ -126,9 +126,75 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "GATEPREP",
+      title: "Classtro",
       projectType: "Web Application",
-      href: "#",
+      href: "https://www.classtro.live/",
+      dates: "2024",
+      active: true,
+      description:
+        "Building a real-time EdTech platform focused on teachers and students, featuring live polls, quizzes, anonymous Q&A, and progress tracking to enhance interactive learning. Implemented live rooms and session creation for interactive classes using session-based management to enable real-time collaboration.",
+      technologies: [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "JavaScript",
+        "Socket.io",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.classtro.live/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/project-1/project1.png",
+      images: [
+        "/projects/project-1/image1.png",
+        "/projects/project-1/image2.png",
+        "/projects/project-1/image3.png",
+        "/projects/project-1/image4.png",
+        "/projects/project-1/image5.png",
+      ],
+      video: "",
+    },
+    {
+      title: "Trustify",
+      projectType: "Web Application",
+      href: "https://trustify-mocha.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "Developed a full-stack rating platform with secure authentication and role-based access using Prisma ORM and PostgreSQL, enabling users to rate stores, store owners to view ratings, and admins to manage users, stores, and analytics.",
+      technologies: [
+        "PostgreSQL",
+        "Prisma ORM",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "TypeScript",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://trustify-mocha.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/project-2/project2.png",
+      images: [
+        "/projects/project-2/image1.png",
+        "/projects/project-2/image2.png",
+        "/projects/project-2/image3.png",
+        "/projects/project-2/image4.png",
+        "/projects/project-2/image5.png",
+      ],
+      video: "",
+    },
+    {
+      title: "GATEPrep",
+      projectType: "Web Application",
+      href: "https://github.com/Namrata0607/GATE-Mock-Test",
       dates: "2024",
       active: true,
       description:
@@ -142,82 +208,60 @@ export const DATA = {
         "Tailwind CSS",
       ],
       links: [
-        // {
-        //   type: "Website",
-        //   href: "#",
-        //   icon: <Icons.globe className="size-3" />,
-        // },
         {
           type: "Source",
           href: "https://github.com/Namrata0607/GATE-Mock-Test",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/project1.jpg",
+      image: "/projects/project-3/project3.jpg",
+      images: [
+        "/projects/project-3/image1.jpg",
+        "/projects/project-3/image2.jpg",
+        "/projects/project-3/image3.jpg",
+        "/projects/project-3/image4.jpg",
+        "/projects/project-3/image5.jpg",
+      ],
       video: "",
     },
     {
       title: "DSARapid",
       projectType: "Mobile Application",
-      href: "#",
+      href: "https://github.com/Namrata0607/DSARapid",
       dates: "2024",
       active: true,
       description:
-        "Developed DSARapid, a comprehensive virtual lab designed to enhance DSA learning through interactive visualizations. Implemented topic-wise visualizers, notes, and tests, leading up to a final test with leaderboard integration.",
+        "Developed DSARapid, a comprehensive virtual lab for DSA learning with interactive topic-wise visualizers, notes, tests, and a final test featuring leaderboard integration.",
       technologies: [
         "Flutter",
         "Firebase",
         "Dart",
       ],
       links: [
-        // {
-        //   type: "Website",
-        //   href: "#",
-        //   icon: <Icons.globe className="size-3" />,
-        // },
         {
           type: "Source",
           href: "https://github.com/Namrata0607/DSARapid",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/project2.png",
-      video: "",
-    },
-    {
-      title: "Book Store Management",
-      projectType: "Desktop Application",
-      href: "#",
-      dates: "2023",
-      active: true,
-      description:
-        "Built a Book Store Management app featuring user book browsing, purchasing & admin stock management. Utilized Advanced Java for the frontend, Java for backend processing, and MySQL for database management.",
-      technologies: [
-        "Java",
-        "MySQL",
-        "Advanced Java",
-        "JDBC",
+      image: "/projects/project-4/project4.png",
+      images: [
+        "/projects/project-4/image1.png",
+        "/projects/project-4/image2.png",
+        "/projects/project-4/image3.png",
+        "/projects/project-4/image4.png",
+        "/projects/project-4/image5.png",
       ],
-      links: [
-        {
-          type: "Source",
-          href: "#",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/project3.jpg",
       video: "",
     },
   ],
   hackathons: [
     {
-      title: "Kathak Visharad-1 Completed",
-      dates: "2023",
-      location: "Kolhapur, MH",
+      title: "0–100 Full Stack Web Development (100xDevs)",
+      dates: "2024",
+      location: "Online",
       description:
-        "Completed Kathak Visharad-1 from Akhil Bharatiya Gandharva Mahavidyalaya Mandal, Mumbai (via Deval Sangeet Vidyalay, Kolhapur). This achievement demonstrates dedication to traditional Indian classical dance and cultural arts alongside technical pursuits.",
-      // image:
-      //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
+        "Completed Full Stack Web Development Course – covering basics of HTML, CSS, JavaScript to advanced topics like PostgreSQL, MERN stack, Tailwind CSS, and more.",
       links: [],
     },
     {
@@ -226,18 +270,14 @@ export const DATA = {
       location: "Kolhapur, MH",
       description:
         "Achieved CGPA of 8.3/10 in B.Tech Computer Science & Engineering and secured 91.06% in Diploma in Information Technology, demonstrating consistent academic performance.",
-      // image:
-      //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
       links: [],
     },
     {
-      title: "Full Stack Development Projects",
-      dates: "2024",
-      location: "Remote",
+      title: "Kathak Visharad-1 Completed",
+      dates: "2023",
+      location: "Kolhapur, MH",
       description:
-        "Successfully developed and deployed multiple full-stack applications using MERN stack, demonstrating proficiency in modern web development technologies and user-centric design principles.",
-      // image:
-      //   "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
+        "Completed Kathak Visharad-1 from Akhil Bharatiya Gandharva Mahavidyalaya Mandal, Mumbai (via Deval Sangeet Vidyalay, Kolhapur). This achievement demonstrates dedication to traditional Indian classical dance and cultural arts alongside technical pursuits.",
       links: [],
     },
   ],

@@ -1,4 +1,5 @@
 import { HackathonCard } from "@/components/hackathon-card";
+import { AchievementCard } from "@/components/achievement-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card-modal";
@@ -42,10 +43,16 @@ export default function Page() {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
+          <div className="space-y-2">
+            <h2 className="text-2xl font-bold text-foreground relative inline-block">
+              About
+              <span className="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 dark:from-yellow-300 dark:to-yellow-500 rounded-full"></span>
+            </h2>
+            <p className="text-sm text-muted-foreground">Get to know more about me</p>
+          </div>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert mt-4">
             {DATA.summary}
           </Markdown>
         </BlurFade>
@@ -53,7 +60,13 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
+            <div className="space-y-2 mb-4">
+              <h2 className="text-2xl font-bold text-foreground relative inline-block">
+                Work Experience
+                <span className="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-green-400 to-green-600 dark:from-green-300 dark:to-green-500 rounded-full"></span>
+              </h2>
+              <p className="text-sm text-muted-foreground">My professional journey</p>
+            </div>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -78,7 +91,13 @@ export default function Page() {
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Education</h2>
+            <div className="space-y-2 mb-4">
+              <h2 className="text-2xl font-bold text-foreground relative inline-block">
+                Education
+                <span className="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-300 dark:to-blue-500 rounded-full"></span>
+              </h2>
+              <p className="text-sm text-muted-foreground">My academic background</p>
+            </div>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
@@ -102,25 +121,17 @@ export default function Page() {
         <SkillsSection />
       </section>
       <section id="projects">
-        <div className="space-y-12 w-full py-12">
+        <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Projects
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
-                </p>
-              </div>
+            <div className="space-y-2">
+              <h2 className="text-2xl font-bold text-foreground relative inline-block">
+                Projects
+                <span className="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-orange-400 to-orange-600 dark:from-orange-300 dark:to-orange-500 rounded-full"></span>
+              </h2>
+              <p className="text-sm text-muted-foreground">Solo & collaborative work</p>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
@@ -133,6 +144,7 @@ export default function Page() {
                   description={project.description}
                   tags={project.technologies}
                   image={project.image}
+                  images={project.images}
                   links={project.links}
                 />
               </BlurFade>
@@ -141,69 +153,64 @@ export default function Page() {
         </div>
       </section>
       <section id="hackathons">
-        <div className="space-y-12 w-full py-12">
+        <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Achievements
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Recognition & Accomplishments
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Throughout my academic and professional journey, I have achieved various milestones that showcase my dedication to both technical excellence and cultural pursuits. These accomplishments reflect my commitment to continuous learning and diverse skill development.
-                </p>
-              </div>
+            <div className="space-y-2">
+              <h2 className="text-2xl font-bold text-foreground relative inline-block">
+                Achievements
+                <span className="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-pink-400 to-pink-600 dark:from-pink-300 dark:to-pink-500 rounded-full"></span>
+              </h2>
+              <p className="text-sm text-muted-foreground">Recognition & accomplishments</p>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    // image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
-          </BlurFade>
+          <div className="flex flex-col gap-4">
+            {DATA.hackathons.map((achievement, id) => (
+              <BlurFade
+                key={achievement.title + achievement.dates}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
+              >
+                <AchievementCard
+                  title={achievement.title}
+                  description={achievement.description}
+                  location={achievement.location}
+                  dates={achievement.dates}
+                  links={achievement.links}
+                />
+              </BlurFade>
+            ))}
+          </div>
         </div>
       </section>
       <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+        <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+            <div className="space-y-2">
+              <h2 className="text-2xl font-bold text-foreground relative inline-block">
                 Contact
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
+                <span className="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-cyan-400 to-cyan-600 dark:from-cyan-300 dark:to-cyan-500 rounded-full"></span>
               </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm with a direct question on {" "}
+              <p className="text-sm text-muted-foreground">Let's get in touch</p>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 17}>
+            <div className="space-y-4">
+              <p className="text-muted-foreground">
+                Want to chat? Just shoot me a dm{" "}
                 <Link
                   href={DATA.contact.social.LinkedIn.url}
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-500 hover:underline font-medium"
+                  target="_blank"
                 >
-                  LinkedIn
+                  on LinkedIn
                 </Link>{" "}
                 or email me directly at{" "}
                 <Link
                   href={`mailto:${DATA.contact.email}`}
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-500 hover:underline font-medium"
                 >
                   {DATA.contact.email}
                 </Link>
-                . I&apos;ll respond whenever I can!
+                . I'll respond whenever I can!
               </p>
             </div>
           </BlurFade>

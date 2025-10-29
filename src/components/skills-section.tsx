@@ -74,13 +74,22 @@ export function SkillsSection() {
   return (
     <div className="flex min-h-0 flex-col gap-y-6">
       <BlurFade delay={BLUR_FADE_DELAY * 9}>
-        <h2 className="text-xl font-bold">Skills</h2>
+        <div className="space-y-2">
+          <h2 className="text-2xl font-bold text-foreground relative inline-block">
+            Skills
+            <span className="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-purple-400 to-purple-600 dark:from-purple-300 dark:to-purple-500 rounded-full"></span>
+          </h2>
+          <p className="text-sm text-muted-foreground">Technologies I work with</p>
+        </div>
       </BlurFade>
       
       {Object.entries(skillCategories).map(([category, skills], categoryIndex) => (
         <BlurFade key={category} delay={BLUR_FADE_DELAY * 10 + categoryIndex * 0.1}>
           <div className="space-y-3">
-            <h3 className="text-lg font-semibold text-primary">{category}</h3>
+            <div className="flex items-center gap-3">
+              <h3 className="text-lg font-semibold text-foreground">{category}</h3>
+              <div className="flex-1 h-px bg-gradient-to-r from-muted to-transparent"></div>
+            </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
               {skills.map((skill, skillIndex) => (
                 <BlurFade 
