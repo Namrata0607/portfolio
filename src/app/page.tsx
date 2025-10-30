@@ -189,7 +189,7 @@ export default function Page() {
                 Contact
                 <span className="absolute -bottom-2 left-0 w-16 h-1 bg-gradient-to-r from-cyan-400 to-cyan-600 dark:from-cyan-300 dark:to-cyan-500 rounded-full"></span>
               </h2>
-              <p className="text-sm text-muted-foreground">Let's get in touch</p>
+              <p className="text-sm text-muted-foreground">Let&apos;s get in touch</p>
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 17}>
@@ -210,7 +210,7 @@ export default function Page() {
                 >
                   {DATA.contact.email}
                 </Link>
-                . I'll respond whenever I can!
+                . I&apos;ll respond whenever I can!
               </p>
             </div>
           </BlurFade>
