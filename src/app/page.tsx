@@ -195,22 +195,22 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div className="space-y-4">
               <p className="text-muted-foreground">
-                Want to chat? Just shoot me a dm{" "}
+                I&apos;m always open to discussing new opportunities, collaborations, or projects. Feel free to reach out to me via{" "}
                 <Link
                   href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline font-medium"
                   target="_blank"
                 >
-                  on LinkedIn
+                  LinkedIn
                 </Link>{" "}
-                or email me directly at{" "}
+                or send me an email at{" "}
                 <Link
                   href={`mailto:${DATA.contact.email}`}
                   className="text-blue-500 hover:underline font-medium"
                 >
                   {DATA.contact.email}
                 </Link>
-                . I&apos;ll respond whenever I can!
+                . I&apos;ll get back to you as soon as possible.
               </p>
             </div>
           </BlurFade>
